@@ -18,4 +18,4 @@ fi
 
 echo "## Running Jest"
 args=$@
-sh -c "$setup ./node_modules/.bin/jest $args"
+sh -c "$setup --max_old_space_size=4096 ./node_modules/.bin/jest $args"
